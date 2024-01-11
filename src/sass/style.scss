@@ -1,4 +1,4 @@
-@import './components';
+@use './components';
 
 * {
 	box-sizing: border-box;
@@ -127,11 +127,12 @@ body {
 			text-decoration: none;
 			font-size: 2rem;
 			color: #000;
+			font-weight: 500;
 			transition: color 0.5s;
 		}
 		.nav-item:hover,
 		.nav-item:focus {
-			color: lime;
+			color: rgb(20, 152, 20);
 		}
 	}
 
@@ -232,6 +233,7 @@ header {
 
 	.aboutus-text {
 		font-size: 1.6rem;
+		line-height: 23px;
 	}
 }
 
@@ -312,7 +314,6 @@ header {
 				transform: translateX(-45%);
 				text-wrap: nowrap;
 				line-height: 30px;
-				font-weight: 600;
 
 				i {
 					margin-right: 0.6em;
@@ -663,6 +664,7 @@ header {
 	.offers-list {
 		.offers-item {
 			display: flex;
+			flex-direction: row;
 			margin: 2em 0;
 			width: 100%;
 
@@ -723,7 +725,6 @@ header {
 		}
 
 		.offer-boxes {
-			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
 
@@ -894,7 +895,6 @@ header {
 
 	.aboutus {
 		.aboutus-box {
-			display: flex;
 			flex-direction: row;
 		}
 		img {
